@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +54,7 @@
     <main>
         <div class="container">
             <h1 align="center">Registro Usuarios</h1>      
-            <form >
+            <form action="agregarDatos.php" method="POST">
                 <div class="form-group">
                     <label for="correo">Nombre de Usuario</label>
                     <input type="user" name="usuario" id="usuario" autocomplete="off" class="form-control" required placeholder="Digite Usuario">
@@ -73,11 +76,8 @@
                     <br>
                     <label for="correo">Correo Electronico</label>
                     <input type="email" name="correo" id="correo" autocomplete="off" class="form-control" required placeholder="Digite Correo">
-                    <br>
-                    <label for="boton"></label>
-                    <a class="btn btn-info" href="registro.html">Registrarse</a>
                 </div> 
-                   
+                   <button type="submit" class="btn btn-success btn-block" id="btnEnviar" name="btnEnviar">Enviar</button>
             </form>
         </div>
         
